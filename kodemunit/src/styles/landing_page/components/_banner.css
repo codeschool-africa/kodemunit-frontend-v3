@@ -1,0 +1,36 @@
+.banner {
+  padding: 80px 0;
+}
+
+.banner .container {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px #0c0c0c, -10px -10px 10px #141414;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.banner .container .left__section, .banner .container .right__section {
+  width: 100%;
+}
+
+.banner .container .left__section img, .banner .container .right__section img {
+  width: 100%;
+}
+
+.banner .container .right__section {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .container .right__section h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background-attachment: fixed;
+  background-clip: text;
+  background-color: #fff;
+  color: #fff;
+}

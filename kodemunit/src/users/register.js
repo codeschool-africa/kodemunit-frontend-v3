@@ -26,8 +26,28 @@ const Register = ({ register }) => {
     learningStyle
   } = formData;
 
-  const handleChange = e => {
+  const handleChange = async e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    let daytime = goodTime;
+    let check = e.target.checked;
+    let checked_time = e.target.value;
+    if (check) {
+      setFormData({
+        ...formData,
+        goodTime: [goodTime, checked_time]
+      });
+    } else {
+      let index = daytime.indexOf(checked_time);
+      if (index > -1) {
+        daytime.splice(index, 1);
+        setFormData({
+          ...formData,
+          goodTime: daytime
+        });
+      }
+    }
+    console.log(formData);
   };
 
   const handleSubmit = async e => {
@@ -89,38 +109,62 @@ const Register = ({ register }) => {
               placeholder='Email address'
             />
           </div>
-          <div className='field-group'>
-            <label htmlFor='password'>location:</label>
+          <label htmlFor='location'>
+            location:
             <input
-              type='text'
               name='locaTion'
-              id='password'
               value={locaTion}
               onChange={e => handleChange(e)}
-              autoComplete='new-password'
             />
-          </div>
-          <div className='field-group'>
-            <label htmlFor='password'>computer access:</label>
-            <input
-              type='text'
-              name='compAccess'
-              id='password'
-              value={compAccess}
-              onChange={e => handleChange(e)}
-              autoComplete='new-password'
-            />
-          </div>
+          </label>
+          <label htmlFor='location'>
+            Computer access:
+            <select name='compAccess' onChange={e => handleChange(e)}>
+              <option value=''>Please select</option>
+              <option value='Never'>Never</option>
+              <option value='Sometimes'>Sometimes</option>
+              <option value='Often'>Often</option>
+              <option value='Always'>Always</option>
+            </select>
+          </label>
           <div className='field-group'>
             <label htmlFor='password'>goodtime:</label>
             <input
-              type='text'
+              type='checkbox'
               name='goodTime'
               id='password'
-              value={goodTime}
+              value='Morning'
               onChange={e => handleChange(e)}
               autoComplete='new-password'
-            />
+            />{" "}
+            Morning <br />
+            <input
+              type='checkbox'
+              name='goodTime'
+              id='password'
+              value='Afternoon'
+              onChange={e => handleChange(e)}
+              autoComplete='new-password'
+            />{" "}
+            Afternoon <br />
+            <input
+              type='checkbox'
+              name='goodTime'
+              id='password'
+              value='Evening'
+              onChange={e => handleChange(e)}
+              autoComplete='new-password'
+            />{" "}
+            Evening <br />
+            <input
+              type='checkbox'
+              name='goodTime'
+              id='password'
+              value='Night'
+              onChange={e => handleChange(e)}
+              autoComplete='new-password'
+            />{" "}
+            Night <br />
           </div>
           <div className='field-group'>
             <label htmlFor='password'>learningStyle:</label>

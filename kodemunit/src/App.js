@@ -6,10 +6,16 @@ import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 
 //user
-import Register from "./users/register";;
+import Register from "./users/register";
+
+//pages
+import Home from "./pages/home";
+import About from "./pages/about";
+import Error from "./components/error";
 
 //setting axios
-axios.defaults.baseURL = "https://us-central1-kodemunit-tz.cloudfunctions.net/api";
+axios.defaults.baseURL =
+  "https://us-central1-kodemunit-tz.cloudfunctions.net/api";
 
 const hist = createBrowserHistory();
 
@@ -17,12 +23,10 @@ const App = () => {
   return (
     <Router history={hist}>
       <Switch>
-        <Route exact path='/'>
-          <>
-            Hello from hom
-          </>
-        </Route>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/register' component={Register} />
+        <Route component={Error} />
       </Switch>
     </Router>
   );

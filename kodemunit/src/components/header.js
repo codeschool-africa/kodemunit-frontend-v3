@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  const open = () => {
+    setOpen(true);
+  };
+  const close = () => {
+    setOpen(false);
+  };
   return (
-    <header className="header">
+    <header className='header'>
       <nav>
         <div className='container'>
           <div className='logo'>
@@ -12,11 +20,14 @@ const Header = () => {
               <img src={logo} alt='kodemunit logo' />
             </Link>
           </div>
-          <div className='burger'>
+          <div className='burger' onClick={open}>
             <span></span>
           </div>
-          <div className='navigation'>
+          <div className={isOpen? "navigation active": "navigation"}>
             <ul>
+              <div className='hamburger' onClick={close}>
+                <span></span>
+              </div>
               <li>
                 <Link to='/#curriculum'>curriculum</Link>
               </li>

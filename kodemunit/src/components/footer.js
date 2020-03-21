@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className='blank'></div>
+        {/* <div className='blank'></div> */}
         <div className='copy-right'>
           <div className='container'>Copyright &copy; - 2020 Kodemunit.</div>
         </div>

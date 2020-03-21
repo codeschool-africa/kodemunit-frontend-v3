@@ -2,11 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id='contact'>
+    <section id='contact' className="contact">
       <div className='container'>
-        <div className='left-section'></div>
+        {/* <div className='left-section'></div> */}
         <div className='right-section'>
-          <header className='contact'>
+          <header>
+            <h1>Contact</h1>
+          </header>
             <form onSubmit={e => e.preventDefault()}>
               <div className='fieldset'>
                 <label htmlFor='name'>
@@ -34,7 +36,6 @@ const Contact = () => {
               </div>
               <button type='submit' className="btn btn-secondary">Send</button>
             </form>
-          </header>
         </div>
       </div>
     </section>

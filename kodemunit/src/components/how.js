@@ -5,7 +5,7 @@ const How = () => {
     <section className='how'>
       <div className='container'>
         <header>
-          <h1 className='header'>Why Kodemunit</h1>
+          <h1>How does This work?</h1>
         </header>
         <div className='col-reasons'>
           <article className='col-reasons__col col1'>
@@ -28,7 +28,9 @@ const How = () => {
             </div>
           </article>
           <article className='col-reasons__col col2'>
-            <div className='circle'></div>
+            <div className='circle'>
+              <h1>How does it work</h1>
+            </div>
           </article>
           <article className='col-reasons__col col1 col3'>
             <div className='row row-one'>

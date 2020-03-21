@@ -1,0 +1,22 @@
+.contact {
+  margin: 70px 0;
+  background: linear-gradient(90deg, rgba(2, 2, 2, 0.1), %);
+}
+
+.contact .container .right-section header h1 {
+  position: relative;
+  padding: 5px 30px;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.contact .container .right-section header h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #fff;
+}

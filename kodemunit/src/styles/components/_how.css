@@ -3,13 +3,19 @@
 }
 
 .how .container {
-  padding: 50px 0 0 0;
+  padding: 50px 20px;
+  color: black;
   margin: 0 auto;
   transition: .2s;
 }
 
 .how .container:hover {
   transform: translateY(-10px);
+}
+
+.how .container header h1 {
+  padding: 10px 30px;
+  font-size: 2.5rem;
 }
 
 .how .container .col-reasons {
@@ -37,12 +43,10 @@
 .how .container .col-reasons .col1 .row h3 {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #fdf9f9d9;
   margin-bottom: 20px;
 }
 
 .how .container .col-reasons .col1 .row p {
-  color: #fdf9f9a6;
   font-size: .95rem;
   line-height: 1.3rem;
 }
@@ -59,7 +63,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
   padding: 20px;
 }
@@ -71,20 +75,6 @@
   left: 20px;
   right: 20px;
   bottom: 20px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
-}
-
-.how .container .col-reasons .col-reasons__col.col2 .circle span {
-  display: inline-block;
-  border-radius: 50%;
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  color: #d94c4880;
-}
-
-.how .container .col-reasons .col-reasons__col.col2 .circle span .one {
-  left: 0;
-  top: 70px;
 }

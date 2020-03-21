@@ -603,6 +603,10 @@ header.header nav .container .navigation ul li a:hover {
   background-color: #fff;
 }
 
+.contact .container .right-section form {
+  font-family: 'Raleway', sans-serif;
+}
+
 .contact .container .right-section form .fieldset label input, .contact .container .right-section form .fieldset label textarea {
   width: 500px;
   min-width: 300px;
@@ -612,6 +616,7 @@ header.header nav .container .navigation ul li a:hover {
   background-color: #E8F0FE;
   border: 1px solid #E8F0FE;
   margin: 15px 0;
+  font-size: 1rem;
 }
 
 .contact .container .right-section form .fieldset label input::-webkit-input-placeholder, .contact .container .right-section form .fieldset label textarea::-webkit-input-placeholder {
@@ -633,6 +638,7 @@ header.header nav .container .navigation ul li a:hover {
 .contact .container .right-section form .fieldset label textarea {
   height: 100px;
   padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contact .container .right-section form .btn.btn-secondary {

@@ -722,6 +722,7 @@ footer .container .social-media div.group div a {
 footer .container .social-media div.group div a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: #00A3E1;
 }
 
 footer .quick-links {

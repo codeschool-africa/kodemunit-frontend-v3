@@ -24,6 +24,10 @@ input:focus, button:focus, a:focus, select:focus, textarea:focus {
   margin: auto;
 }
 
+.container h1 {
+  font-size: 2.5rem;
+}
+
 ul {
   list-style: none;
 }
@@ -332,6 +336,32 @@ header.header nav .container .navigation ul li a:hover {
       align-self: flex-start;
 }
 
+@media screen and (max-width: 992px) {
+  .banner {
+    padding: 60px 0;
+  }
+  .banner .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    top: 60px;
+    padding: 40px 0;
+  }
+  .banner .container {
+    width: 90%;
+    display: block;
+  }
+  .banner .container .illustration {
+    display: none;
+  }
+  .banner .container .welcoming-message h1 {
+    font-size: 2rem;
+  }
+}
+
 .how {
   margin-top: 100px;
 }
@@ -352,7 +382,6 @@ header.header nav .container .navigation ul li a:hover {
 .how .container header h1 {
   position: relative;
   padding: 5px 30px;
-  font-size: 2.5rem;
   color: #05506C;
   font-weight: normal;
 }
@@ -574,7 +603,6 @@ header.header nav .container .navigation ul li a:hover {
   text-transform: capitalize;
   color: #05506C;
   font-weight: 400;
-  font-size: 2.5rem;
   text-align: center;
   margin: 0 0 30px 0;
 }
@@ -793,6 +821,9 @@ header.header nav .container .navigation ul li a:hover {
   .curriculum .container {
     width: 90%;
   }
+  .curriculum .container header p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -829,7 +860,6 @@ header.header nav .container .navigation ul li a:hover {
 .contact .container .right-section header h1 {
   position: relative;
   padding: 5px 30px;
-  font-size: 2.5rem;
   color: #fff;
   font-weight: normal;
   margin-bottom: 30px;
@@ -1070,8 +1100,27 @@ footer .copy-right .container {
 }
 
 @media screen and (max-width: 700px) {
+  main {
+    top: 60px;
+  }
+  main::after {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
   .container {
     width: 90%;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .container {
+    width: 90%;
+  }
+  .container h1 {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

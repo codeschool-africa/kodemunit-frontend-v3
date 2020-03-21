@@ -1,3 +1,7 @@
+footer {
+  font-family: 'Raleway', sans-serif;
+}
+
 footer .container {
   text-align: center;
 }
@@ -7,18 +11,22 @@ footer .container div {
 }
 
 footer .container .quote {
-  padding: 50px 0;
+  padding: 20px 0;
+  max-width: 700px;
+  margin: auto;
 }
 
 footer .container .quote blockquote {
   padding: 30px 0;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
   font-style: italic;
 }
 
 footer .container .quote blockquote cite {
   position: absolute;
+  right: 0;
   bottom: 0;
   font-size: 1rem;
   font-style: normal;
@@ -103,6 +111,7 @@ footer .quick-links .container ul li a {
 
 footer .quick-links .container ul li a:hover {
   opacity: 1;
+  text-decoration: underline;
 }
 
 footer .blank {

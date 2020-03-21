@@ -645,6 +645,10 @@ header.header nav .container .navigation ul li a:hover {
   opacity: .9;
 }
 
+footer {
+  font-family: 'Raleway', sans-serif;
+}
+
 footer .container {
   text-align: center;
 }
@@ -654,40 +658,26 @@ footer .container div {
 }
 
 footer .container .quote {
-  padding: 50px 0;
+  padding: 20px 0;
+  max-width: 700px;
+  margin: auto;
 }
 
 footer .container .quote blockquote {
   padding: 30px 0;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
   font-style: italic;
 }
 
 footer .container .quote blockquote cite {
   position: absolute;
+  right: 0;
   bottom: 0;
   font-size: 1rem;
+  color: #05506C;
   font-style: normal;
-}
-
-footer .container .download h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 1.8rem;
-}
-
-footer .container .download h2 a img {
-  width: 200px;
 }
 
 footer .container .social-media {
@@ -702,17 +692,17 @@ footer .container .social-media {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 footer .container .social-media div.group {
   display: inline-block;
   padding: 0 10px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
 }
 
 footer .container .social-media div.group p {
-  display: inline-block;
-  margin-right: 30px;
   font-size: 1.2rem;
 }
 
@@ -723,8 +713,8 @@ footer .container .social-media div.group div {
 footer .container .social-media div.group div a {
   display: inline-block;
   font-size: 1.5rem;
-  margin: 10px 0;
-  margin-left: 30px;
+  margin: 10px 15px;
+  color: #D94C48;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -734,12 +724,9 @@ footer .container .social-media div.group div a:hover {
           transform: scale(1.2);
 }
 
-footer .container .social-media div.group div a:nth-child(1) {
-  margin-left: 0;
-}
-
 footer .quick-links {
-  padding: 40px 0;
+  padding: 20px 0;
+  background: #05506C;
 }
 
 footer .quick-links .container ul {
@@ -761,23 +748,32 @@ footer .quick-links .container ul {
 footer .quick-links .container ul img {
   opacity: 1;
   height: 30px;
+  width: auto;
+  margin: 0 15px;
 }
 
 footer .quick-links .container ul li {
-  margin: 20px 0;
-  margin-left: 40px;
+  margin: 20px 15px;
 }
 
 footer .quick-links .container ul li a {
+  color: #fff;
+  text-decoration: none;
   opacity: .7;
 }
 
 footer .quick-links .container ul li a:hover {
   opacity: 1;
+  text-decoration: underline;
 }
 
-footer .blank {
-  padding: 30px 0;
+footer .quick-links .container ul li a.btn.btn-tertiary {
+  opacity: 1;
+  color: #05506C;
+}
+
+footer .quick-links .container ul li a.btn.btn-tertiary:hover {
+  text-decoration: none;
 }
 
 footer .copy-right {
@@ -785,7 +781,7 @@ footer .copy-right {
 }
 
 footer .copy-right .container {
-  opacity: .7;
+  opacity: 1;
   font-size: .9rem;
 }
 
@@ -793,40 +789,15 @@ footer .copy-right .container {
   .container .quote blockquote cite {
     right: 0;
   }
-  .container .download h2 {
-    font-size: 1.5rem !important;
-  }
-  .container .download h2 a img {
-    width: 100px;
-  }
-  .container .social-media div.group p {
-    margin-right: 30px;
-  }
   .quick-links .container ul img {
     opacity: 1;
     height: 30px;
   }
   .quick-links .container ul li {
     margin: 20px 10px !important;
-    margin-left: 10px !important;
-  }
-  .blank {
-    padding: 20px 0 !important;
   }
   .copy-right .container {
     font-size: .8rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .container .social-media div.group p {
-    margin-right: 20px !important;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .container .social-media div.group p {
-    margin-right: 0px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */

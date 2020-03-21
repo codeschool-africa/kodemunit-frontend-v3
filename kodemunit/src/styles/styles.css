@@ -348,7 +348,7 @@ header.header nav .container .navigation ul li a:hover {
 @media screen and (max-width: 700px) {
   .banner {
     top: 60px;
-    padding: 40px 0;
+    padding: 25px 0;
   }
   .banner .container {
     width: 90%;

@@ -558,6 +558,9 @@ header.header nav .container .navigation ul li a:hover {
   .how .container {
     width: 90%;
   }
+  .how .container header {
+    margin-bottom: 20px;
+  }
   .how .container .col-reasons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -566,6 +569,7 @@ header.header nav .container .navigation ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0px 0;
   }
   .how .container .col-reasons::before {
     display: none;

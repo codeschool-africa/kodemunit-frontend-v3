@@ -33,7 +33,7 @@ const Curriculum = () => {
     setGetStarted(false);
     setFrontend(false);
     setLibraries(false);
-    setBackend(isBackend);
+    setBackend(!isBackend);
   };
 
   return (

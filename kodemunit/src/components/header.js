@@ -28,7 +28,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link to='/register' className='btn-primary'>
+          <Link to='/register' className='btn btn-primary'>
             Register
           </Link>
         </div>

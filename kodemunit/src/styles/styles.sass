@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap')
+
 @import "./_variables";
 
 *
@@ -10,50 +12,65 @@ body, html
 
 body
     font-family: 'Roboto', sans-serif
-    background: $dark-background
+    background: $background-color
     overflow-x: hidden
-    min-height: 100vh
 
 input:focus, button:focus, a:focus, select:focus, textarea:focus 
     outline: none !important
 
-#app
-    height: 100%
+.container
+    width: 80%
+    margin: auto
+
+ul
+    list-style: none
 
 .btn
-    border-radius: 10px
-    // display: inline-flex
-    padding: 10px 35px
-    box-shadow: 5px 5px 7px #070707, -5px -5px 7px #383535
-    color: #c2c0bd
+    padding: 10px 20px
+    box-shadow: -8px -8px 15px 5px rgba(0,0,0,.1), 8px 8px 15px 5px rgba(0, 0, 0, .1)
+    border: none
     letter-spacing: 1px
     text-transform: uppercase
-    font-weight: bold
+    font-weight: 700
     text-decoration: none
-    transition:  .2s
+    transition: .2s ease-in-out
     &:hover
-        box-shadow: inset 5px 5px 10px #070707, inset -5px -5px 10px #494949
+        box-shadow: -2px -2px 7px rgba(0,0,0,.1), 2px 2px 7px rgba(0, 0, 0, .1)
 
-.error
-    background: #dc3545
-    border-radius: 5px
-    margin: 20px 0
-    padding: 15px
+.btn-primary, .btn-secondary
+    background-color: $primary-color
+    color: $background-color
 
-h1.header
-    font-size: 2rem
-    display: inline-block
-    color: white
-    padding: 25px 0
-    font-weight: lighter
+.btn-secondary
+    background-color: $secondary-color
+
+.btn-tertiary
+    background-color: $background-color
+    color: $tertiary-color
+
+main
     position: relative
-    text-transform: uppercase
-    &::before
-      content: ""
-      position: absolute
-      bottom: 0
-      left: 50%
-      transform: translateX(-50%)
-      height: 1px
-      width: 60%
-      background: white
+    top: 70px
+    &::after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        top: 350px
+        width: 100%
+        // height: 80%
+        background-color: $tertiary-color
+        z-index: -3
+        border-top-left-radius: 70px
+        border-top-right-radius: 70px
+
+img
+    width: 100%
+
+//components
+@import "./components/_header" 
+@import "./components/_banner"
+@import "./components/_how"
+@import "./components/_curriculum"
+@import "./components/_footer"
+

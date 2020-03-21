@@ -17,9 +17,9 @@ const Footer = () => {
         <div className='container'>
           <div className='quote'>
             <blockquote>
-              “Whether you want to uncover the secret of the universe or want
-              to pursue a carrier in the 21st century, basic computer
-              programming is an essential skill to learn”
+              “Whether you want to uncover the secret of the universe or want to
+              pursue a carrier in the 21st century, basic computer programming
+              is an essential skill to learn”
               <cite>- Stephen Hawking</cite>
             </blockquote>
           </div>
@@ -60,12 +60,12 @@ const Footer = () => {
                 <Link to='/about'>Carriers</Link>
               </li>
               <li>
-                <Link to='/register' className='btn btn-secondary'>
-                  Register
-                </Link>
+                <Link to='/terms-and-conditions'>Terms and conditions</Link>
               </li>
               <li>
-                <Link to='/terms-and-conditions'>Terms and conditions</Link>
+                <Link to='/register' className='btn btn-tertiary'>
+                  Register
+                </Link>
               </li>
             </ul>
           </div>

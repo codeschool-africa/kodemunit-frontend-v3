@@ -13,6 +13,9 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Error from "./components/error";
 
+//styles
+import "./styles/styles.css"
+
 //setting axios
 axios.defaults.baseURL =
   "https://us-central1-kodemunit-tz.cloudfunctions.net/api";

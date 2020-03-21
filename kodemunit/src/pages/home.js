@@ -23,15 +23,17 @@ const Home = () => {
 We equip you  with software developement skills and knowledge necessary to get  software developer jobs.'
         imgAlt='illustration'
       >
-        <Link to='/register'>register</Link>
+        <Link to='/register' className='btn btn-primary'>
+          register
+        </Link>
       </Banner>
       <main>
-        <div className="colored-bg"></div>
+        <div className='colored-bg'></div>
         <Curriculum />
         <How />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,160 @@
+footer .container {
+  text-align: center;
+}
+
+footer .container div {
+  padding: 20px 0;
+}
+
+footer .container .quote {
+  padding: 50px 0;
+}
+
+footer .container .quote blockquote {
+  padding: 30px 0;
+  position: relative;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+footer .container .quote blockquote cite {
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+footer .container .download h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+}
+
+footer .container .download h2 a img {
+  width: 200px;
+}
+
+footer .container .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+footer .container .social-media div.group {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer .container .social-media div.group p {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+footer .container .social-media div.group div {
+  display: inline-block;
+}
+
+footer .container .social-media div.group div a {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  margin-left: 30px;
+  transition: .2s ease-in-out;
+}
+
+footer .container .social-media div.group div a:hover {
+  transform: scale(1.2);
+}
+
+footer .container .social-media div.group div a:nth-child(1) {
+  margin-left: 0;
+}
+
+footer .quick-links {
+  padding: 40px 0;
+}
+
+footer .quick-links .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+footer .quick-links .container ul img {
+  opacity: 1;
+  height: 30px;
+}
+
+footer .quick-links .container ul li {
+  margin: 20px 0;
+  margin-left: 40px;
+}
+
+footer .quick-links .container ul li a {
+  opacity: .7;
+}
+
+footer .quick-links .container ul li a:hover {
+  opacity: 1;
+}
+
+footer .blank {
+  padding: 30px 0;
+}
+
+footer .copy-right {
+  padding: 30px 0;
+}
+
+footer .copy-right .container {
+  opacity: .7;
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container .quote blockquote cite {
+    right: 0;
+  }
+  .container .download h2 {
+    font-size: 1.5rem !important;
+  }
+  .container .download h2 a img {
+    width: 100px;
+  }
+  .container .social-media div.group p {
+    margin-right: 30px;
+  }
+  .quick-links .container ul img {
+    opacity: 1;
+    height: 30px;
+  }
+  .quick-links .container ul li {
+    margin: 20px 10px !important;
+    margin-left: 10px !important;
+  }
+  .blank {
+    padding: 20px 0 !important;
+  }
+  .copy-right .container {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container .social-media div.group p {
+    margin-right: 20px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container .social-media div.group p {
+    margin-right: 0px !important;
+  }
+}

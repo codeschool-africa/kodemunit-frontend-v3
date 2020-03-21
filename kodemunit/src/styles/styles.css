@@ -214,7 +214,6 @@ header.header nav .container .navigation ul li a:hover {
   background: #F6FDFF;
   padding: 50px 20px;
   color: black;
-  margin: 0 auto;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -243,6 +242,7 @@ header.header nav .container .navigation ul li a:hover {
 }
 
 .how .container .col-reasons {
+  position: relative;
   padding: 70px 0;
   display: -ms-grid;
   display: grid;
@@ -264,6 +264,7 @@ header.header nav .container .navigation ul li a:hover {
 
 .how .container .col-reasons .col1 .row {
   margin: 30px 0;
+  height: 200px;
 }
 
 .how .container .col-reasons .col1 .row h4 {
@@ -328,10 +329,104 @@ header.header nav .container .navigation ul li a:hover {
   border-radius: 50%;
 }
 
-.how .container .col-reasons .col-reasons__col.col2 .circle h1 {
-  font-size: 2.5rem;
-  color: #05506C;
-  font-weight: normal;
+@media screen and (max-width: 1080px) {
+  .how .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .how .container {
+    width: 80%;
+  }
+  .how .container header {
+    margin-bottom: 50px;
+  }
+  .how .container .col-reasons {
+    -ms-grid-columns: 1fr 0fr 1fr;
+        grid-template-columns: 1fr 0fr 1fr;
+    grid-column-gap: 30px;
+    position: relative;
+    padding: 30px 0;
+    height: 100%;
+  }
+  .how .container .col-reasons::before, .how .container .col-reasons::after {
+    content: "";
+    position: absolute;
+    background: #05506C;
+  }
+  .how .container .col-reasons::before {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+  }
+  .how .container .col-reasons::after {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+  }
+  .how .container .col-reasons .col1 .row {
+    margin: 20px 0;
+  }
+  .how .container .col-reasons .col-reasons__col.col2 {
+    padding: 0;
+  }
+  .how .container .col-reasons .col-reasons__col.col2 .circle {
+    display: none;
+    padding: 0;
+  }
+  .how .container .col-reasons .col-reasons__col.col2 .circle::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .how .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .how .container {
+    width: 90%;
+  }
+  .how .container .col-reasons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .how .container .col-reasons::before {
+    display: none;
+  }
+  .how .container .col-reasons::after {
+    display: none;
+  }
+  .how .container .col-reasons .col1 .row {
+    height: 100%;
+  }
+  .how .container .col-reasons .col1 .row p {
+    height: 100%;
+  }
+  .how .container .col-reasons .col1 .row-one {
+    text-align: right;
+    border-right: 2px solid #438976;
+    padding-right: 20px;
+  }
+  .how .container .col-reasons .col1 .row-two {
+    text-align: left;
+    border-left: 2px solid #438976;
+    padding-left: 20px;
+  }
 }
 
 .curriculum .container {

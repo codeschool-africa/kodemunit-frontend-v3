@@ -29,7 +29,7 @@ const How = () => {
           </article>
           <article className='col-reasons__col col2'>
             <div className='circle'>
-              <h1>How does it work</h1>
+              {/* <h1>How does it work</h1> */}
             </div>
           </article>
           <article className='col-reasons__col col1 col3'>

@@ -4,7 +4,6 @@
         background: $fainty-background
         padding: 50px 20px
         color: black
-        margin: 0 auto
         transition: .2s
         &:hover
             transform: translateY(-10px)
@@ -24,6 +23,7 @@
                     width: 5px
                     background-color: $tertiary-color
         .col-reasons
+            position: relative
             padding: 70px 0
             display: grid
             grid-template-columns: 1fr 1.5fr 1fr
@@ -34,6 +34,7 @@
                 flex-direction: column
                 .row
                     margin: 30px 0
+                    height: 200px
                     h4
                         color: $tertiary-color
                         font-size: 1.5rem
@@ -75,8 +76,78 @@
                         bottom: 20px
                         border: 1px solid black
                         border-radius: 50%
-                    h1
-                        font-size: 2.5rem
-                        color: $tertiary-color
-                        font-weight: normal
                         
+
+@media screen and ( max-width: 1080px )
+    .how
+        .container
+            width: 90%
+
+@media screen and ( max-width: 992px )
+    .how
+        .container
+            width: 80%
+            header
+                margin-bottom: 50px
+            .col-reasons
+                grid-template-columns: 1fr 0fr 1fr
+                grid-column-gap: 30px
+                position: relative
+                padding: 30px 0
+                height: 100%
+                &::before, &::after
+                    content: ""
+                    position: absolute
+                    background: $tertiary-color
+                &::before
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 1px
+                    width: 100%
+                &::after
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+                    height: 100%
+                    width: 1px
+                .col1
+                    .row
+                        margin: 20px 0
+                .col-reasons__col.col2
+                    padding: 0
+                    .circle
+                        display: none
+                        padding: 0
+                        &::before
+                            display: none
+
+@media screen and ( max-width: 700px )
+    .how
+        .container
+            width: 90%
+
+@media screen and ( max-width: 635px )
+    .how
+        .container
+            width: 90%
+            .col-reasons
+                display: flex
+                flex-direction: column
+                &::before
+                    display: none
+                &::after
+                    display: none
+                .col1
+                    .row
+                        height: 100%
+                        p
+                            height: 100%
+                    .row-one
+                        text-align: right
+                        border-right: 2px solid $fancy-color
+                        padding-right: 20px
+                    .row-two
+                        text-align: left
+                        border-left: 2px solid $fancy-color
+                        padding-left: 20px

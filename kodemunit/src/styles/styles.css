@@ -198,16 +198,11 @@ header.header nav .container .navigation ul li a:hover {
     right: 0;
     height: 100vh;
     width: 0;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    overflow: hidden;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
   }
-  header.header nav .container .navigation.active {
-    width: 60%;
-    background: #fff;
-    -webkit-box-shadow: -1px -2px 1px rgba(0, 0, 0, 0.1);
-            box-shadow: -1px -2px 1px rgba(0, 0, 0, 0.1);
-  }
-  header.header nav .container .navigation.active ul {
+  header.header nav .container .navigation ul {
     height: 100%;
     width: 100%;
     -webkit-box-orient: vertical;
@@ -222,7 +217,7 @@ header.header nav .container .navigation ul li a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header.header nav .container .navigation.active ul .hamburger {
+  header.header nav .container .navigation ul .hamburger {
     height: 60px;
     width: 30px;
     position: absolute;
@@ -239,10 +234,10 @@ header.header nav .container .navigation ul li a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header.header nav .container .navigation.active ul .hamburger span {
+  header.header nav .container .navigation ul .hamburger span {
     position: absolute;
   }
-  header.header nav .container .navigation.active ul .hamburger span::before, header.header nav .container .navigation.active ul .hamburger span::after {
+  header.header nav .container .navigation ul .hamburger span::before, header.header nav .container .navigation ul .hamburger span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -253,20 +248,26 @@ header.header nav .container .navigation ul li a:hover {
     -webkit-transform: rotateZ(45deg) translate(3.5px, 7px);
             transform: rotateZ(45deg) translate(3.5px, 7px);
   }
-  header.header nav .container .navigation.active ul .hamburger span::after {
+  header.header nav .container .navigation ul .hamburger span::after {
     top: 7px;
     -webkit-transform: rotateZ(-45deg) translate(3.5px, -7px);
             transform: rotateZ(-45deg) translate(3.5px, -7px);
   }
-  header.header nav .container .navigation.active ul li {
+  header.header nav .container .navigation ul li {
     width: 100%;
     text-align: left;
     margin-left: 20px;
     padding: 10px 0;
     border-bottom: 1px solid #438976;
   }
-  header.header nav .container .navigation.active ul li a {
+  header.header nav .container .navigation ul li a {
     padding: 0;
+  }
+  header.header nav .container .navigation.active {
+    width: 70%;
+    background: #fff;
+    -webkit-box-shadow: -1px -2px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: -1px -2px 1px rgba(0, 0, 0, 0.1);
   }
   header.header nav .container .btn {
     display: none;

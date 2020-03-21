@@ -348,7 +348,7 @@ header.header nav .container .navigation ul li a:hover {
 @media screen and (max-width: 700px) {
   .banner {
     top: 60px;
-    padding: 25px 0;
+    padding: 20px 0;
   }
   .banner .container {
     width: 90%;
@@ -358,10 +358,10 @@ header.header nav .container .navigation ul li a:hover {
     display: none;
   }
   .banner .container .welcoming-message {
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .banner .container .welcoming-message h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .banner .container .welcoming-message p {
     font-size: 1rem;

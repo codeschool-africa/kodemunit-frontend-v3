@@ -27,7 +27,7 @@ We equip you  with software developement skills and knowledge necessary to get  
           register
         </Link>
       </Banner>
-      <main>
+      <main className="home">
         <div className='colored-bg'></div>
         <Curriculum />
         <How />

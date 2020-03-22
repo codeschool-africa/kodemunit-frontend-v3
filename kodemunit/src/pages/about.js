@@ -17,8 +17,8 @@ const About = () => {
         <Team />
         <Founders />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

@@ -923,9 +923,6 @@ header.header nav .container .navigation ul li a:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .intro {
-    text-align: justify;
-  }
   .intro .container {
     width: 80%;
   }
@@ -936,7 +933,8 @@ header.header nav .container .navigation ul li a:hover {
 
 @media screen and (max-width: 700px) {
   .intro {
-    text-align: justify;
+    padding: 1rem 0 0 0;
+    text-align: center;
   }
   .intro .container {
     width: 90%;

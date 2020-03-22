@@ -10,7 +10,7 @@ const Intro = () => {
           </header>
           <div className='description'>
             <p>
-              Kodemunit is a learning platform built on the foundation of
+              Kodemunit is a learning platform established on the foundation of
               community, sharing and helping one another to become better and
               technology ready citizens of the world. It was started in 2019.
             </p>
@@ -36,7 +36,7 @@ const Intro = () => {
           </header>
           <div className='description'>
             <p>
-              To develop talents from Africa that can work anywhere in the world
+              "To develop talents from Africa that can work anywhere in the world"
             </p>
           </div>
         </article>

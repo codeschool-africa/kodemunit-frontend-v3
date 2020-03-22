@@ -2,6 +2,7 @@
     .container
         background: $fainty-background
         padding: 2rem
+        box-shadow: -1px -1px 2px rgba(0,0,0,.1)
         transition: .2s
         &:hover
             transform: translateY(-10px)
@@ -29,8 +30,10 @@
                 margin: 3rem 0
                 &.justine
                     text-align: right
+                    padding-left: 20px
                 &.benny
                     text-align: left
+                    padding-right: 20px
                 .image
                     width: 80%
                     display: flex
@@ -42,7 +45,7 @@
                         width: 100%
                         height: auto
                         // max-height: 350px
-                        align-self: flex-start
+                        align-self: flex-end
                 .description
                     width: 100%
                     h2

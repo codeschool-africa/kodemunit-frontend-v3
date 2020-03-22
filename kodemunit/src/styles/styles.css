@@ -934,13 +934,19 @@ header.header nav .container .navigation ul li a:hover {
 @media screen and (max-width: 700px) {
   .intro {
     padding: 1rem 0 0 0;
-    text-align: center;
+    text-align: left;
   }
   .intro .container {
     width: 90%;
   }
   .intro .container header h1 {
     font-size: 1.8rem;
+  }
+  .intro .container article {
+    margin: 1rem 0;
+  }
+  .intro .container article ol li {
+    margin: 10px 0 0 0;
   }
 }
 

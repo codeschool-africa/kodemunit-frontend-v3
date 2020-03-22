@@ -922,6 +922,30 @@ header.header nav .container .navigation ul li a:hover {
   margin: 10px 0 0 1.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .intro {
+    text-align: justify;
+  }
+  .intro .container {
+    width: 80%;
+  }
+  .intro .container header h1 {
+    font-size: 2.0rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    text-align: justify;
+  }
+  .intro .container {
+    width: 90%;
+  }
+  .intro .container header h1 {
+    font-size: 1.8rem;
+  }
+}
+
 .team {
   padding: 1.5rem 0;
 }
@@ -1000,6 +1024,38 @@ header.header nav .container .navigation ul li a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: #00A3E1;
+}
+
+@media screen and (max-width: 992px) {
+  .team .container {
+    width: 90%;
+  }
+  .team .container header h1 {
+    font-size: 2rem;
+  }
+  .team .container .showcase article {
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .team .container .showcase article {
+    min-width: 280px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .team .container header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .team .container .showcase article {
+    min-width: 200px;
+    width: 100%;
+  }
 }
 
 .founders .container {
@@ -1096,6 +1152,7 @@ header.header nav .container .navigation ul li a:hover {
 }
 
 .founders .container .showcase article .description p {
+  font-size: 1.1rem;
   line-height: 2rem;
   margin-bottom: 1rem;
 }
@@ -1104,6 +1161,35 @@ header.header nav .container .navigation ul li a:hover {
   font-size: 2rem;
   color: #438976;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .founders .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .founders .container .showcase article {
+    margin: 1.5rem 0;
+  }
+  .founders .container .showcase article .image {
+    display: none;
+  }
+  .founders .container .showcase article.justine {
+    padding-left: 0;
+  }
+  .founders .container .showcase article.benny {
+    padding-right: 0;
+  }
+  .founders .container .showcase article .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .founders .container .showcase article .description h2 .icon {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+  }
 }
 
 .contact {
@@ -1374,7 +1460,7 @@ footer .copy-right .container {
     width: 90%;
   }
   .container h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1383,7 +1469,7 @@ footer .copy-right .container {
     width: 90%;
   }
   .container h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

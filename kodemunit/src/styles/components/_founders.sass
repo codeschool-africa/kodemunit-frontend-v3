@@ -54,9 +54,36 @@
                         font-weight: 400
                         margin-bottom: 1.5rem
                     p
+                        font-size: 1.1rem
                         line-height: 2rem
                         margin-bottom: 1rem
                         .icon
                             font-size: 2rem
                             color: $fancy-color
                             margin-right: 1rem
+
+@media screen and ( max-width: 992px )
+    .founders
+        .container    
+            width: 90%
+
+@media screen and ( max-width: 850px )
+    .founders
+        .container    
+            .showcase
+                article
+                    margin: 1.5rem 0
+                    .image
+                        display: none
+                    &.justine
+                        padding-left: 0
+                    &.benny
+                        padding-right: 0
+                    .description
+                        h2
+                            font-size: 1.5rem
+                            margin-bottom: 1.2rem
+                            .icon
+                                font-size: 1.5rem
+                                margin-right: .5rem
+

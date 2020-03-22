@@ -48,3 +48,37 @@
                         &:hover
                             transform: scale(1.2)
                             color: $primary-color
+
+@media screen and ( max-width: 992px )
+    .team
+        .container
+            width: 90%
+            header
+                h1
+                    font-size: 2rem
+            .showcase
+                article
+                    min-width: 280px
+
+@media screen and ( max-width: 745px )
+    .team
+        .container
+            .showcase
+                article
+                    min-width: 280px
+                    width: 350px
+
+@media screen and ( max-width: 700px )
+    .team
+        .container
+            header
+                h1
+                    font-size: 1.8rem
+
+@media screen and ( max-width: 350px )
+    .team
+        .container
+            .showcase
+                article
+                    min-width: 200px
+                    width: 100%

@@ -8,6 +8,7 @@ export const register = ({
   locaTion,
   about,
   compAccess,
+  hoursWeek,
   goodTime,
   learningStyle
 }) => async dispatch => {
@@ -19,6 +20,7 @@ export const register = ({
     locaTion: locaTion,
     about: about,
     compAccess: compAccess,
+    hoursWeek: hoursWeek,
     goodTime: goodTime,
     learningStyle: learningStyle
   };

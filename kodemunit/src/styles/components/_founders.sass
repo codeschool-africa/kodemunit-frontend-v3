@@ -1,0 +1,59 @@
+.founders
+    .container
+        background: $fainty-background
+        padding: 2rem
+        transition: .2s
+        &:hover
+            transform: translateY(-10px)
+        header
+            h1
+                position: relative
+                padding: 5px 30px
+                color: $tertiary-color
+                font-weight: normal
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    top: 0
+                    height: 100%
+                    width: 5px
+                    background-color: $tertiary-color
+        .showcase
+            padding: 2rem 0
+            display: flex
+            flex-direction: column
+            article
+                display: flex
+                justify-content: space-between
+                margin: 3rem 0
+                &.justine
+                    text-align: right
+                &.benny
+                    text-align: left
+                .image
+                    width: 80%
+                    display: flex
+                    justify-content: center
+                    position: relative
+                    img
+                        position: relative
+                        max-width: 350px
+                        width: 100%
+                        height: auto
+                        // max-height: 350px
+                        align-self: flex-start
+                .description
+                    width: 100%
+                    h2
+                        color: $fancy-color
+                        font-size: 2rem
+                        font-weight: 400
+                        margin-bottom: 1.5rem
+                    p
+                        line-height: 2rem
+                        margin-bottom: 1rem
+                        .icon
+                            font-size: 2rem
+                            color: $fancy-color
+                            margin-right: 1rem

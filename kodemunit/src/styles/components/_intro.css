@@ -1,0 +1,12 @@
+.intro {
+  padding: 2rem 0;
+  text-align: justify;
+}
+
+.intro .container {
+  width: 60%;
+}
+
+.intro .container h1 {
+  text-align: center;
+}

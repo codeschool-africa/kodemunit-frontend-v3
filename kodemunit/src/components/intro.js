@@ -30,17 +30,19 @@ const Intro = () => {
             </p>
           </div>
         </article>
-        <article>
-          <header className='mission'>
+        <article className='mission'>
+          <header>
             <h1>our mission</h1>
           </header>
           <div className='description'>
-            To develop talents from Africa that can work anywhere in the world
+            <p>
+              To develop talents from Africa that can work anywhere in the world
+            </p>
           </div>
         </article>
         <article>
           <header className='elevator'>
-            <h1>What do we do? ‘Elevator pitch’</h1>
+            <h1>What do we do?</h1>
           </header>
           <div className='description'>
             <p>

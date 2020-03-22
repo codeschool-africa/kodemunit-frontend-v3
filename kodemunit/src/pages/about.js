@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="about">
         <Intro />
         <Team />
         <Founders />

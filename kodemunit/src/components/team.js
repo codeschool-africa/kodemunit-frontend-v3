@@ -13,7 +13,7 @@ const Team = () => {
           <article>
             <img src={dp} alt='profile' />
             <h2>Justine Mahinyila</h2>
-            <h3>Co-Founder and CEO of Kodemunit</h3>
+            <h3>Co-Founder and Team Leader</h3>
             <div className='social'>
               <a href='#'>
                 <FaFacebookF className='icon' />
@@ -29,7 +29,7 @@ const Team = () => {
           <article>
             <img src={dp} alt='profile' />
             <h2>Benedict Steven</h2>
-            <h3>Co-Founder and CEO of Kodemunit</h3>
+            <h3>Co-Founder and CTO</h3>
             <div className='social'>
               <a href='#'>
                 <FaFacebookF className='icon' />

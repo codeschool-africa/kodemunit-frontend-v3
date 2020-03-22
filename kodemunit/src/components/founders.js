@@ -1,5 +1,6 @@
 import React from "react";
 import dp from "../images/profile.png";
+import { FaQuoteLeft } from "react-icons/all";
 
 const Founders = () => {
   return (
@@ -9,13 +10,14 @@ const Founders = () => {
           <h1>Founders’ stories</h1>
         </header>
         <div className='showcase'>
-          <article>
-            <div className='left'>
+          <article className='justine'>
+            <div className='image'>
               <img src={dp} alt='profile' />
             </div>
-            <div className='right'>
+            <div className='description'>
               <h2>Justine's Story</h2>
               <p>
+                <FaQuoteLeft className='icon' />
                 IIANZA KATIKA MWA MWAKA 2019 BAADA YA sisi pamoja kujifunza
                 kuandika programming online through various channels on youtube
                 as well as online learning platforms and a number of scholarship
@@ -45,23 +47,23 @@ const Founders = () => {
               </p>
             </div>
           </article>
-          <article>
-            <div className='left'>
+          <article className='benny'>
+            <div className='description'>
               <h2>Benny's Story</h2>
               <p>
-                I grew up in a non-technology foundation, where access to
-                technology wasn’t easy. I went to college at Water Institute,
-                Tanzania where I pursued a bachelor degree in water resources
-                and Irrigation engineering. My friend and Co-Founder Justine
-                introduced me to Programming and I was interested so he provided
-                me with online sites to learn software development. It was hard
-                but worth it. In the meantime we learned that sololearning is
-                hard if you don’t have proper guidance and mentorship you can
-                get stuck on a certain matter and fail to figure out for so long
-                and that makes it easy to give up. We also learned that there
-                are few people in the digital field from Tanzania and Africa in
-                general and the problem of imposter syndrome faces a lot of
-                beginners.
+                <FaQuoteLeft className='icon' />I grew up in a non-technology
+                foundation, where access to technology wasn’t easy. I went to
+                college at Water Institute, Tanzania where I pursued a bachelor
+                degree in water resources and Irrigation engineering. My friend
+                and Co-Founder Justine introduced me to Programming and I was
+                interested so he provided me with online sites to learn software
+                development. It was hard but worth it. In the meantime we
+                learned that sololearning is hard if you don’t have proper
+                guidance and mentorship you can get stuck on a certain matter
+                and fail to figure out for so long and that makes it easy to
+                give up. We also learned that there are few people in the
+                digital field from Tanzania and Africa in general and the
+                problem of imposter syndrome faces a lot of beginners.
               </p>
               <p>
                 So we came up with an idea to help learners learn these things
@@ -71,7 +73,7 @@ const Founders = () => {
                 field.
               </p>
             </div>
-            <div className='right'>
+            <div className='image'>
               <img src={dp} alt='profile' />
             </div>
           </article>

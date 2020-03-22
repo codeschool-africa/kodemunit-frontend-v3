@@ -942,6 +942,8 @@ header.header nav .container .navigation ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team .container .showcase article {

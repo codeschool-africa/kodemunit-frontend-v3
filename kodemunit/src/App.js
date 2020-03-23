@@ -11,6 +11,7 @@ import Register from "./users/register";
 //pages
 import Home from "./pages/home";
 import About from "./pages/about";
+import TermsAndConditions from "./pages/termsAndConditions"
 import Error from "./components/error";
 
 //styles
@@ -29,6 +30,7 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/register' component={Register} />
+        <Route exact path="/terms-and-conditions" component={TermsAndConditions} />
         <Route component={Error} />
       </Switch>
     </Router>

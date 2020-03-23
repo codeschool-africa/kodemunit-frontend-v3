@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
@@ -51,10 +52,10 @@ const Footer = () => {
             <ul>
               <img src={bwLogo} alt='kodemunit logo' />
               <li>
-                <a href='http://www.kodemunit.com#curriculum'>Curriculum</a>
+                <HashLink to='/#curriculum'>Curriculum</HashLink>
               </li>
               <li>
-                <a href='http://www.kodemunit.com#contact'>Contact</a>
+                <HashLink to='#contact'>Contact</HashLink>
               </li>
               <li>
                 <Link to='/about'>About</Link>

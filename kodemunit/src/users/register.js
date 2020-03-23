@@ -240,7 +240,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               </div>
               <Alert />
               <button className='btn btn-secondary' disabled={loading}>
-                {loading ? `Loading...` : `Register`}
+                {loading ? `Please wait...` : `Register`}
               </button>
             </form>
           </div>

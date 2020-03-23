@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../images/logo.png";
 
 const Header = () => {
@@ -29,13 +30,13 @@ const Header = () => {
                 <span></span>
               </div>
               <li>
-                <a href='http://www.kodemunit.com#curriculum'>Curriculum</a>
+                <HashLink to='/#curriculum' onClick={close}>Curriculum</HashLink>
               </li>
               <li>
-                <a href='http://www.kodemunit.com#contact'>Contact</a>
+                <HashLink to='#contact' onClick={close}>Contact</HashLink>
               </li>
               <li>
-                <Link to='/about'>about</Link>
+                <Link to='/about' onClick={close}>about</Link>
               </li>
             </ul>
           </div>
@@ -49,3 +50,5 @@ const Header = () => {
 };
 
 export default Header;
+
+//todo... work on hashlinks... so tired right now aaarrggg

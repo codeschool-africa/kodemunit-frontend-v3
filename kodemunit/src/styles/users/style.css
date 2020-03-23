@@ -19,6 +19,14 @@
   width: 640px;
 }
 
+.registration main .container .terms {
+  margin: 25px 0;
+}
+
+.registration main .container .terms a {
+  color: #438976;
+}
+
 .registration main .container .user-registration {
   padding: 1rem 0;
 }
@@ -59,7 +67,12 @@
 .registration main .container .user-registration .field-group label {
   display: block;
   margin-bottom: 15px;
+  font-size: .9rem;
   text-transform: capitalize;
+}
+
+.registration main .container .user-registration .field-group label span {
+  color: red;
 }
 
 .registration main .container .user-registration .field-group .input {
@@ -86,16 +99,60 @@
   border-bottom: 1px solid #d3cece;
   padding: 10px 0;
   resize: none;
+  font-size: .9rem;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.registration main .container .user-registration .field-group input:focus .input::before {
-  width: 100%;
+.registration main .container .user-registration .field-group .input input[type="text"]::-webkit-input-placeholder, .registration main .container .user-registration .field-group .input input[type="email"]::-webkit-input-placeholder, .registration main .container .user-registration .field-group .input textarea::-webkit-input-placeholder {
+  opacity: .9;
+}
+
+.registration main .container .user-registration .field-group .input input[type="text"]:-ms-input-placeholder, .registration main .container .user-registration .field-group .input input[type="email"]:-ms-input-placeholder, .registration main .container .user-registration .field-group .input textarea:-ms-input-placeholder {
+  opacity: .9;
+}
+
+.registration main .container .user-registration .field-group .input input[type="text"]::-ms-input-placeholder, .registration main .container .user-registration .field-group .input input[type="email"]::-ms-input-placeholder, .registration main .container .user-registration .field-group .input textarea::-ms-input-placeholder {
+  opacity: .9;
+}
+
+.registration main .container .user-registration .field-group .input input[type="text"]::placeholder, .registration main .container .user-registration .field-group .input input[type="email"]::placeholder, .registration main .container .user-registration .field-group .input textarea::placeholder {
+  opacity: .9;
+}
+
+.registration main .container .user-registration .field-group .input input:focus, .registration main .container .user-registration .field-group .input textarea:focus {
+  border-bottom: 3px solid #438976;
+}
+
+.registration main .container .user-registration .field-group .input textarea {
+  font-family: 'Raleway', sans-serif;
+  height: 60px;
+}
+
+.registration main .container .user-registration .field-group input[type="checkbox"], .registration main .container .user-registration .field-group input[type="radio"] {
+  margin-right: 15px;
+}
+
+.registration main .container .user-registration .field-group p {
+  margin: 15px 0;
+  text-transform: capitalize;
+  font-size: .9rem;
+  line-height: 1.5rem;
+}
+
+.registration main .container .user-registration .field-group p span {
+  color: red;
+}
+
+.registration main .container .user-registration .field-group a {
+  color: #438976;
+  font-size: .9rem;
+  margin: 15px 0;
 }
 
 .registration main .container .user-registration .field-group select {
   width: 100%;
+  max-width: 624px;
   overflow-x: hidden;
   background: none;
   border: none;

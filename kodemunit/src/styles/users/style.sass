@@ -12,6 +12,10 @@
             justify-content: center
             max-width: 90vw
             width: 640px
+            .terms
+                margin: 25px 0
+                a
+                    color: $fancy-color
             .user-registration
                 padding: 1rem 0
                 .content
@@ -41,7 +45,10 @@
                     label
                         display: block
                         margin-bottom: 15px
+                        font-size: .9rem
                         text-transform: capitalize
+                        span
+                            color: red
                     .input
                         position: relative
                         margin-top: 15px
@@ -61,11 +68,31 @@
                             border-bottom: 1px solid #d3cece
                             padding: 10px 0
                             resize: none
+                            font-size: .9rem
                             transition: .3s
-                    input:focus .input::before
-                        width: 100%
+                            &::placeholder
+                                opacity: .9
+                        input:focus, textarea:focus
+                            border-bottom: 3px solid $fancy-color
+                        textarea
+                            font-family: 'Raleway', sans-serif
+                            height: 60px
+                    input[type="checkbox"], input[type="radio"]
+                        margin-right: 15px
+                    p
+                        margin: 15px 0
+                        text-transform: capitalize
+                        font-size: .9rem
+                        line-height: 1.5rem
+                        span
+                            color: red
+                    a
+                        color: $fancy-color
+                        font-size: .9rem
+                        margin: 15px 0
                     select
                         width: 100%
+                        max-width: 624px
                         overflow-x: hidden
                         background: none
                         border: none

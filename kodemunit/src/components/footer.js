@@ -51,10 +51,10 @@ const Footer = () => {
             <ul>
               <img src={bwLogo} alt='kodemunit logo' />
               <li>
-                <Link to='/#curriculum'>Curriculum</Link>
+                <a href='http://www.kodemunit.com#curriculum'>Curriculum</a>
               </li>
               <li>
-                <Link to='/#contact'>Contact</Link>
+                <a href='http://www.kodemunit.com#contact'>Contact</a>
               </li>
               <li>
                 <Link to='/about'>About</Link>

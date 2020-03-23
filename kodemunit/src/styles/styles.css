@@ -65,22 +65,28 @@ button.btn:disabled {
   background: gray;
 }
 
+button:hover {
+  pointer-events: all;
+  cursor: pointer;
+}
+
 .alert {
   padding: 10px;
   margin: 20px 0;
-  border-radius: 10px;
   width: 100%;
-  color: white;
+  border-radius: 8px;
   font-size: .9rem;
   line-height: 1.5rem;
 }
 
 .alert.error {
-  background: #D94C48;
+  color: #D94C48;
+  border: 1px solid #D94C48;
 }
 
 .alert.success {
-  background: #2B8E70;
+  color: #2B8E70;
+  border: 1px solid #2b8e70;
 }
 
 main {

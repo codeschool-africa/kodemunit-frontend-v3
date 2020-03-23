@@ -23,16 +23,16 @@ const Header = () => {
           <div className='burger' onClick={open}>
             <span></span>
           </div>
-          <div className={isOpen? "navigation active": "navigation"}>
+          <div className={isOpen ? "navigation active" : "navigation"}>
             <ul>
               <div className='hamburger' onClick={close}>
                 <span></span>
               </div>
               <li>
-                <Link to='/#curriculum'>curriculum</Link>
+                <a href='http://www.kodemunit.com#curriculum'>Curriculum</a>
               </li>
               <li>
-                <Link to='/#contact'>contact</Link>
+                <a href='http://www.kodemunit.com#contact'>Contact</a>
               </li>
               <li>
                 <Link to='/about'>about</Link>

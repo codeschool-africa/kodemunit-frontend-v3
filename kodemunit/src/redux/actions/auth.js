@@ -1,6 +1,11 @@
 import axios from "axios";
 import { setAlert } from "./alert";
-import { REGISTER_SUCCESS, REGISTER_FAIL } from "../types/types";
+import {
+  REGISTER_SUCCESS,
+  REGISTER_FAIL,
+  LOADING,
+  STOP_LOADING
+} from "../types/types";
 
 export const register = ({
   email,
@@ -25,6 +30,7 @@ export const register = ({
     goodTime: goodTime,
     learningStyle: learningStyle
   };
+  dispatch({ type: LOADING });
   axios
     .post("/signup", newUser)
     .then(res => {
@@ -33,10 +39,12 @@ export const register = ({
         type: REGISTER_SUCCESS,
         payload: res.data
       });
+      dispatch({ type: STOP_LOADING });
       dispatch(setAlert(res.data.success, "success"));
     })
     .catch(err => {
       const errors = err.response.data;
+      dispatch({ type: STOP_LOADING });
       dispatch(setAlert(errors.error, "error"));
       console.log(errors);
       dispatch({

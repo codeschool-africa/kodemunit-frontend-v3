@@ -24,7 +24,7 @@ const emailReg = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
 
-const Register = ({ register, setAlert, auth: { isAuthenticated } }) => {
+const Register = ({ register, setAlert, auth: { loading } }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -215,7 +215,9 @@ const Register = ({ register, setAlert, auth: { isAuthenticated } }) => {
                 </span>
               </div>
               <Alert />
-              <button className='btn btn-secondary'>Register</button>
+              <button className='btn btn-secondary' disabled={loading}>
+                {loading ? `Loading...` : `Register`}
+              </button>
             </form>
           </div>
         </div>

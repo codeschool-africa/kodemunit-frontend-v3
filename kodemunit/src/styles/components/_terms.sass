@@ -1,0 +1,47 @@
+.terms
+    top: 90px
+    padding: 2rem 0
+    margin-bottom: 100px
+    .container
+        display: flex
+        grid-template-columns: 1fr 2.5fr
+        position: relative
+        .left-nav
+            width: 30%
+            nav
+                position: sticky
+                top: 90px
+                ul
+                    border-right: 1px solid lightgrey
+                    li
+                        height: 40px
+                        border-bottom: 1px solid lightgray
+                        a
+                            display: flex
+                            align-items: center
+                            padding-left: 10px
+                            text-decoration: none
+                            color: $tertiary-color
+                            height: 100%
+                            width: 100%
+                            background: $fainty-background
+                            &:hover
+                                opacity: .7
+        .right-content
+            width: 70%
+            padding: 0 30px
+            position: relative
+            section
+                padding-top: 70px
+                h1, h2
+                    font-size: 2.5rem
+                    font-weight: normal
+                    color: $tertiary-color
+                h2
+                    font-size: 2rem
+                p
+                    margin: 2rem 0
+                    line-height: 1.6rem
+                    ul
+                        list-style: disc
+                        margin-left: 6rem

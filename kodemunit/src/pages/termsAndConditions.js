@@ -10,7 +10,7 @@ const TermsAndConditions = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="terms">
         <div className='container'>
           <div className='left-nav'>
             <nav>

@@ -1325,6 +1325,89 @@ header.header nav .container .navigation ul li a:hover {
   }
 }
 
+.terms {
+  top: 90px;
+  padding: 2rem 0;
+  margin-bottom: 100px;
+}
+
+.terms .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr 2.5fr;
+      grid-template-columns: 1fr 2.5fr;
+  position: relative;
+}
+
+.terms .container .left-nav {
+  width: 30%;
+}
+
+.terms .container .left-nav nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+.terms .container .left-nav nav ul {
+  border-right: 1px solid lightgrey;
+}
+
+.terms .container .left-nav nav ul li {
+  height: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+.terms .container .left-nav nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #05506C;
+  height: 100%;
+  width: 100%;
+  background: #F6FDFF;
+}
+
+.terms .container .left-nav nav ul li a:hover {
+  opacity: .7;
+}
+
+.terms .container .right-content {
+  width: 70%;
+  padding: 0 30px;
+  position: relative;
+}
+
+.terms .container .right-content section {
+  padding-top: 70px;
+}
+
+.terms .container .right-content section h1, .terms .container .right-content section h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #05506C;
+}
+
+.terms .container .right-content section h2 {
+  font-size: 2rem;
+}
+
+.terms .container .right-content section p {
+  margin: 2rem 0;
+  line-height: 1.6rem;
+}
+
+.terms .container .right-content section p ul {
+  list-style: disc;
+  margin-left: 6rem;
+}
+
 footer {
   font-family: 'Raleway', sans-serif;
 }

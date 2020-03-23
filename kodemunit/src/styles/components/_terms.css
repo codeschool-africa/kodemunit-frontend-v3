@@ -1,0 +1,36 @@
+.terms {
+  top: 90px;
+  padding: 2rem 0;
+  margin-bottom: 100px;
+}
+
+.terms .container {
+  display: flex;
+  grid-template-columns: 1fr 2.5fr;
+  position: relative;
+}
+
+.terms .container .left-nav {
+  width: 30%;
+}
+
+.terms .container .left-nav nav {
+  position: sticky;
+  top: 90px;
+}
+
+.terms .container .left-nav nav ul li {
+  height: 40px;
+}
+
+.terms .container .left-nav nav ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.terms .container .right-content {
+  width: 70%;
+  padding: 0 30px;
+  position: relative;
+}

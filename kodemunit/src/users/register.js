@@ -214,7 +214,11 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                     </label>
                   );
                 })}
-                <a href='#' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://openclassrooms.com/en/courses/5281811-learn-how-to-learn/5514261-explore-your-various-intelligences-and-learning-styles'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Learn more about different learning style
                 </a>
               </div>
@@ -235,7 +239,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <div className='terms'>
                 <span>
                   By registering you agree with our{" "}
-                  <Link to='/term-and-conditions'>terms and conditions</Link>
+                  <Link to='/terms-and-conditions'>terms and conditions</Link>
                 </span>
               </div>
               <Alert />

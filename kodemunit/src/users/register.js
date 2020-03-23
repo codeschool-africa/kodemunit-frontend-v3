@@ -53,7 +53,31 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
     console.log(formData);
   };
 
-  // const handleCheckbox = () => {};
+  const handleCheckbox = async e => {
+    let checkedItem = formData.goodTime;
+    if (e.target.checked) {
+      checkedItem.push(e.target.value);
+    } else {
+      checkedItem.remove(checkedItem, obj => {
+        return obj == e.target.value;
+      });
+    }
+    console.log(checkedItem);
+    setFormData({ ...formData, goodTime: checkedItem });
+  };
+
+  const handleChangeLearn = e => {
+    let checkedItem = formData.learningStyle;
+    if (e.target.checked) {
+      checkedItem.push(e.target.value);
+    } else {
+      checkedItem.remove(checkedItem, obj => {
+        return obj == e.target.value;
+      });
+    }
+    console.log(checkedItem);
+    setFormData({ ...formData, learningStyle: checkedItem });
+  };
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -147,7 +171,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                         name='goodTime'
                         id={access.key}
                         value={access.value}
-                        onChange={e => handleChange(e)}
+                        onChange={e => handleCheckbox(e)}
                       />{" "}
                       {access.value}
                     </label>
@@ -184,7 +208,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                         name='learningStyle'
                         id={access.key}
                         value={access.value}
-                        onChange={e => handleChange(e)}
+                        onChange={e => handleChangeLearn(e)}
                       />{" "}
                       {access.value}
                     </label>

@@ -73,6 +73,7 @@
 
 .registration main .container .user-registration .field-group label span {
   color: red;
+  font-weight: 700;
 }
 
 .registration main .container .user-registration .field-group .input {
@@ -142,6 +143,7 @@
 
 .registration main .container .user-registration .field-group p span {
   color: red;
+  font-weight: 700;
 }
 
 .registration main .container .user-registration .field-group a {

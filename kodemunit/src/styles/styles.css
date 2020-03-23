@@ -66,11 +66,13 @@ button.btn:disabled {
 }
 
 .alert {
-  padding: 20px;
+  padding: 10px;
   margin: 20px 0;
   border-radius: 10px;
   width: 100%;
   color: white;
+  font-size: .9rem;
+  line-height: 1.5rem;
 }
 
 .alert.error {

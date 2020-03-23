@@ -724,7 +724,7 @@ header.header nav .container .navigation ul li a:hover {
   content: "";
   position: absolute;
   left: 0;
-  height: 5px;
+  height: 10px;
   width: 100%;
   background: #438976;
 }

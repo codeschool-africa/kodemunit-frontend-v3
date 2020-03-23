@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/header";
 
 //components
@@ -9,10 +9,13 @@ import Contact from "../components/contact";
 import Footer from "../components/footer";
 
 const About = () => {
+  useEffect(() => {
+    document.title = `About - Kodemunit`;
+  });
   return (
     <>
       <Header />
-      <main className="about">
+      <main className='about'>
         <Intro />
         <Team />
         <Founders />

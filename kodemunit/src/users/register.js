@@ -70,11 +70,11 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
       learningStyle: learningStyle
     };
     if (!email.match(emailReg)) {
-      setAlert("email is not valid", "error");
+      setAlert("Please enter a valid email", "error");
     } else if (lastName.length === 0) {
-      setAlert("last name is required");
+      setAlert("Last name is required", "error");
     } else if (firstName.length === 0) {
-      setAlert("first name is required");
+      setAlert("First name is required", "error");
     } else {
       register(newUser);
     }

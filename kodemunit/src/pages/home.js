@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //components
@@ -13,6 +13,10 @@ import Footer from "../components/footer";
 import illustration from "../images/illustration.png";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = `Home - Kodemunit`;
+  });
+
   return (
     <>
       <Header />
@@ -27,7 +31,7 @@ We equip you  with software developement skills and knowledge necessary to get  
           register
         </Link>
       </Banner>
-      <main className="home">
+      <main className='home'>
         <div className='colored-bg'></div>
         <Curriculum />
         <How />

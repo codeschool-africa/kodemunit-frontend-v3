@@ -369,7 +369,7 @@ const Register = ({ register }) => {
                   <Link to='/term-and-conditions'>terms and conditions</Link>
                 </span>
               </div>
-              <button>Register</button>
+              <button className="btn btn-secondary">Register</button>
             </form>
           </div>
         </div>

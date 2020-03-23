@@ -64,7 +64,7 @@ const Register = ({ register }) => {
   return (
     <>
       <Header />
-      <main>
+      <main className="registration">
         <div className='container'>
           <div className='user-registration'>
             <header className='register'>
@@ -373,3 +373,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, { register })(Register);
+
+
+//to add data in array i will have to create  a variable using react hooks and set it as an array...

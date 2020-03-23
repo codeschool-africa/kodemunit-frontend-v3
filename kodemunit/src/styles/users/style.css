@@ -1,8 +1,13 @@
-main .container {
+main.registration .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main .container .user-registration {
+main.registration .container .user-registration {
   padding: 2rem 0;
 }
+/*# sourceMappingURL=style.css.map */

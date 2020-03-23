@@ -90,7 +90,20 @@
   transition: .3s;
 }
 
-.registration main .container .user-registration .field-group input::focus > .input::before {
+.registration main .container .user-registration .field-group input:focus .input::before {
   width: 100%;
+}
+
+.registration main .container .user-registration .field-group select {
+  width: 100%;
+  overflow-x: hidden;
+  border: none;
+  border-bottom: 1px solid #d3cece;
+  padding: 10px 0;
+}
+
+.registration main .container .user-registration .field-group select option {
+  margin: 10px 0;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

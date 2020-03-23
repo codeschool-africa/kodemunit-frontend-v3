@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { register } from "../redux/actions/auth";
+import { setAlert } from "../redux/actions/alert";
+import Alert from "../components/alerts";
 
 //components
 import Footer from "../components/registerFooter";
@@ -11,13 +13,18 @@ import {
   learningStylesCheckBoxes,
   goodTimeCheckBoxes,
   hoursWeekRadio,
-  CompAccessSelect
+  CompAccessSelect,
+  normalInputs
 } from "../components/data";
 
 //styles
 import "../styles/users/style.css";
 
-const Register = ({ register }) => {
+const emailReg = RegExp(
+  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+);
+
+const Register = ({ register, setAlert, auth: { isAuthenticated } }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -46,7 +53,7 @@ const Register = ({ register }) => {
     console.log(formData);
   };
 
-  const handleCheckbox = () => {};
+  // const handleCheckbox = () => {};
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -62,7 +69,15 @@ const Register = ({ register }) => {
       goodTime: goodTime,
       learningStyle: learningStyle
     };
-    register(newUser);
+    if (!email.match(emailReg)) {
+      setAlert("email is not valid", "error");
+    } else if (lastName.length === 0) {
+      setAlert("last name is required");
+    } else if (firstName.length === 0) {
+      setAlert("first name is required");
+    } else {
+      register(newUser);
+    }
   };
 
   useEffect(() => {
@@ -82,61 +97,24 @@ const Register = ({ register }) => {
                 your software development carrier.
               </p>
             </header>
-            <form onSubmit={e => handleSubmit(e)}>
-              <div className='field-group content'>
-                <label htmlFor='first-name'>First Name</label>
-                <div className='input'>
-                  <input
-                    id='first-name'
-                    placeholder='First Name'
-                    type='text'
-                    value={firstName}
-                    onChange={e => handleChange(e)}
-                    name='firstName'
-                    noValidate
-                  />
-                </div>
-              </div>
-              <div className='field-group content'>
-                <label htmlFor='last-name'>Last Name</label>
-                <div className='input'>
-                  <input
-                    id='last-name'
-                    type='text'
-                    name='lastName'
-                    noValidate
-                    value={lastName}
-                    onChange={e => handleChange(e)}
-                    placeholder='Last Name'
-                  />
-                </div>
-              </div>
-              <div className='field-group content'>
-                <label htmlFor='email'>Your email address</label>
-                <div className='input'>
-                  <input
-                    type='email'
-                    name='email'
-                    id='email'
-                    value={email}
-                    onChange={e => handleChange(e)}
-                    placeholder='example@email.com'
-                  />
-                </div>
-              </div>
-              <div className='field-group content'>
-                <label htmlFor='location'>Where are you from?</label>
-                <div className='input'>
-                  <input
-                    type='text'
-                    id='location'
-                    name='locaTion'
-                    value={locaTion}
-                    onChange={e => handleChange(e)}
-                    placeholder='City, Country'
-                  />
-                </div>
-              </div>
+            <form onSubmit={e => handleSubmit(e)} noValidate>
+              {normalInputs.map(access => {
+                return (
+                  <div className='field-group content' key={access.key}>
+                    <label htmlFor={access.key}>{access.label}</label>
+                    <div className='input'>
+                      <input
+                        id={access.key}
+                        placeholder={access.placeholder}
+                        type={access.type}
+                        value={access.value.value}
+                        onChange={e => handleChange(e)}
+                        name={access.name}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
               <div className='field-group content'>
                 <label htmlFor='comp-access'>
                   Do you own or have access to computer for coding?
@@ -236,6 +214,7 @@ const Register = ({ register }) => {
                   <Link to='/term-and-conditions'>terms and conditions</Link>
                 </span>
               </div>
+              <Alert />
               <button className='btn btn-secondary'>Register</button>
             </form>
           </div>
@@ -247,13 +226,15 @@ const Register = ({ register }) => {
 };
 
 Register.propTypes = {
-  register: PropTypes.func.isRequired
+  register: PropTypes.func.isRequired,
+  setAlert: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-  state
+  auth: state.auth
 });
 
-export default connect(mapStateToProps, { register })(Register);
+export default connect(mapStateToProps, { register, setAlert })(Register);
 
 //to add data in array i will have to create  a variable using react hooks and set it as an array...

@@ -9,7 +9,7 @@ export const goodTimeCheckBoxes = [
   },
   {
     value: "1 PM - 4 PM",
-    key: "sevenpm"
+    key: "onepm"
   },
   {
     value: "4 PM - 7 PM",
@@ -76,16 +76,51 @@ export const learningStylesCheckBoxes = [
 ];
 
 export const CompAccessSelect = [
-    {
-        value: "Never"
-    },
-    {
-        value: "Sometimes"
-    },
-    {
-        value: "Often"
-    },
-    {
-        value: "Always"
-    }
-]
+  {
+    value: "Never"
+  },
+  {
+    value: "Sometimes"
+  },
+  {
+    value: "Often"
+  },
+  {
+    value: "Always"
+  }
+];
+
+export const normalInputs = [
+  {
+    type: "text",
+    name: "firstName",
+    key: "first-name",
+    value: "firstName",
+    placeholder: "First Name",
+    label: "First Name"
+  },
+  {
+    type: "text",
+    name: "lastName",
+    key: "last-name",
+    value: "lastName",
+    placeholder: "Last Name",
+    label: "Last Name"
+  },
+  {
+    type: "email",
+    name: "email",
+    key: "email",
+    value: "email",
+    placeholder: "example@gmail.com",
+    label: "Enter your Email Address"
+  },
+  {
+    type: "text",
+    name: "locaTion",
+    key: "location",
+    value: "locaTion",
+    placeholder: "City/Region, Country",
+    label: "Where are you from?"
+  }
+];

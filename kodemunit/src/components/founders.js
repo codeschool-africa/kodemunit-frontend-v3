@@ -18,13 +18,14 @@ const Founders = () => {
               <h2>Justine's Story</h2>
               <p>
                 <FaQuoteLeft className='icon' />
-                IIANZA KATIKA MWA MWAKA 2019 BAADA YA sisi pamoja kujifunza
-                kuandika programming online through various channels on youtube
-                as well as online learning platforms and a number of scholarship
-                while at the same time still attending college with me studying
-                computer engineering studies at Dar es salaam institute of
-                technology and Ben going with water resources engineering at
-                water resources institute in Dar es salaam.
+                It all started in 2019 after I hard heard of a number of
+                opportunities to learn computer programming online through
+                various channels on youtube as well as online learning platforms
+                and a number of scholarship while at the same time still
+                attending college with me studying computer engineering studies
+                at Dar es salaam institute of technology and Ben going with
+                Water Resources and Irrigation Engineering at Water Institute in
+                Dar es salaam.
               </p>
               <p>
                 After I had seen the opportunity in self learning software
@@ -57,12 +58,12 @@ const Founders = () => {
                 degree in water resources and Irrigation engineering. My friend
                 and Co-Founder Justine introduced me to Programming and I was
                 interested so he provided me with online sites to learn software
-                development. It was hard but worth it. In the meantime we
-                learned that sololearning is hard if you don’t have proper
-                guidance and mentorship you can get stuck on a certain matter
-                and fail to figure out for so long and that makes it easy to
-                give up. We also learned that there are few people in the
-                digital field from Tanzania and Africa in general and the
+                development. It was hard but worth it. <br />
+                In the meantime we learned that sololearning is hard if you
+                don’t have proper guidance and mentorship you can get stuck on a
+                certain matter and fail to figure out for so long and that makes
+                it easy to give up. We also learned that there are few people in
+                the digital field from Tanzania and Africa in general and the
                 problem of imposter syndrome faces a lot of beginners.
               </p>
               <p>

@@ -25,7 +25,6 @@ export default function(state = initialState, action) {
         isAuthenticated: true,
         loading: false,
         user: payload,
-        // isAdmin: true
       };
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
@@ -36,7 +35,6 @@ export default function(state = initialState, action) {
         isAuthenticated: true,
         loading: false,
         user: payload,
-        // isAdmin: true
       };
     case REGISTER_FAIL:
     case AUTH_ERROR:
@@ -49,7 +47,6 @@ export default function(state = initialState, action) {
         isAuthenticated: false,
         loading: false,
         user: null,
-        // isAdmin: false
       };
     default:
       return state;

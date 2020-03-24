@@ -4,7 +4,7 @@
     margin-bottom: 100px
     .container
         display: flex
-        grid-template-columns: 1fr 2.5fr
+        // grid-template-columns: 1fr 2.5fr
         position: relative
         .left-nav
             width: 30%
@@ -45,3 +45,12 @@
                     ul
                         list-style: disc
                         margin-left: 6rem
+
+@media screen and ( max-width: 600px )
+    .terms
+        top: 70px
+        .container
+            flex-direction: column 
+            .left-nav, .right-content
+                width: 100%
+                padding: 0   

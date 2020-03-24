@@ -1335,8 +1335,6 @@ header.header nav .container .navigation ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-columns: 1fr 2.5fr;
-      grid-template-columns: 1fr 2.5fr;
   position: relative;
 }
 
@@ -1406,6 +1404,22 @@ header.header nav .container .navigation ul li a:hover {
 .terms .container .right-content section p ul {
   list-style: disc;
   margin-left: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .terms {
+    top: 70px;
+  }
+  .terms .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .terms .container .left-nav, .terms .container .right-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 footer {

@@ -31,7 +31,7 @@ const Team = () => {
             <h2>Benedict Steven</h2>
             <h3>Co-Founder and CTO</h3>
             <div className='social'>
-              <a href='http://www.facebook.com/'>
+              <a href='https://www.facebook.com/profile.php?id=100006234616525'>
                 <FaFacebookF className='icon' />
               </a>
               <a href='http://www.twitter.com/bmsteven'>

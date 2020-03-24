@@ -28,7 +28,7 @@ const Footer = () => {
             <div className='group'>
               <p>Follow Us On</p>
               <div>
-                <a href='http://www.twitter.com/kodemunit/kodemunit'>
+                <a href='http://www.twitter.com/kodemunit'>
                   <FaTwitter className='icon' />
                 </a>
                 <a href='http://www.facebook.com/kodemunit'>

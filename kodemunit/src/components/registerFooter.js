@@ -19,19 +19,19 @@ const Footer = () => {
             <div className='group'>
               <p>Follow Us On</p>
               <div>
-                <a href='#'>
+                <a href='http://www.twitter.com/kodemunit/kodemunit'>
                   <FaTwitter className='icon' />
                 </a>
-                <a href='#'>
+                <a href='http://www.facebook.com/kodemunit'>
                   <FaFacebookF className='icon' />
                 </a>
-                <a href='#'>
+                <a href='http://www.instagram.com/kodemunit'>
                   <FaInstagram className='icon' />
                 </a>
-                <a href='#'>
+                <a href='https://www.youtube.com/channel/UC9P0lls7i2ck1RKYz-NVRPQ'>
                   <FaYoutube className='icon' />
                 </a>
-                <a href='#'>
+                <a href='http://www.linkedin.com/in/kodemunit'>
                   <FaLinkedinIn className='icon' />
                 </a>
               </div>

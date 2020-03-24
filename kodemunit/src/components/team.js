@@ -31,13 +31,13 @@ const Team = () => {
             <h2>Benedict Steven</h2>
             <h3>Co-Founder and CTO</h3>
             <div className='social'>
-              <a href='#'>
+              <a href='http://www.facebook.com/'>
                 <FaFacebookF className='icon' />
               </a>
-              <a href='#'>
+              <a href='http://www.twitter.com/bmsteven'>
                 <FaTwitter className='icon' />
               </a>
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/benedict-steven'>
                 <FaLinkedinIn className='icon' />
               </a>
             </div>

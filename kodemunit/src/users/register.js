@@ -107,6 +107,8 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
       setAlert("Identify the time period that you will be active", "error");
     } else if (learningStyle.length === 0) {
       setAlert("Please choose your learning style", "error");
+    } else if(hoursWeek.length === 0) {
+      setAlert("How Many Hours Can You Dedicate To The Program In A Week?", "error")
     } else {
       register(newUser);
     }

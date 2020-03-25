@@ -51,7 +51,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
 
   const handleChange = async e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
+    // console.log(formData);
   };
 
   const handleCheckbox = async e => {

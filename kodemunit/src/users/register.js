@@ -99,6 +99,14 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
       setAlert("Last name is required", "error");
     } else if (firstName.length === 0) {
       setAlert("First name is required", "error");
+    } else if (locaTion.length === 0) {
+      setAlert("Please enter your location", "error");
+    } else if (compAccess.length === 0) {
+      setAlert("Please select one option if you have computer access", "error");
+    } else if (goodTime.length === 0) {
+      setAlert("Identify the time period that you will be active", "error");
+    } else if (learningStyle.length === 0) {
+      setAlert("Please choose your learning style", "error");
     } else {
       register(newUser);
     }
@@ -160,8 +168,9 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               </div>
               <div className='field-group content'>
                 <p>
-                  Kindly quantify the number of hours you’ll be able to dedicate
-                  to the program every week
+                  Kindly indicate the time period (in your local time) during
+                  which you will be actively participating in the program
+                  activities
                 </p>
                 {goodTimeCheckBoxes.map(access => {
                   return (

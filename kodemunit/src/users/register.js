@@ -21,7 +21,7 @@ import {
 import "../styles/users/style.css";
 
 const emailReg = RegExp(
-  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 );
 
 const Register = ({ register, setAlert, auth: { loading } }) => {
@@ -50,7 +50,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
 
   const handleChange = async e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
+    // console.log(formData);
   };
 
   const handleCheckbox = async e => {
@@ -59,10 +59,10 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
       checkedItem.push(e.target.value);
     } else {
       checkedItem.remove(checkedItem, obj => {
-        return obj == e.target.value;
+        return obj === e.target.value;
       });
     }
-    console.log(checkedItem);
+    // console.log(checkedItem);
     setFormData({ ...formData, goodTime: checkedItem });
   };
 
@@ -72,10 +72,10 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
       checkedItem.push(e.target.value);
     } else {
       checkedItem.remove(checkedItem, obj => {
-        return obj == e.target.value;
+        return obj === e.target.value;
       });
     }
-    console.log(checkedItem);
+    // console.log(checkedItem);
     setFormData({ ...formData, learningStyle: checkedItem });
   };
 

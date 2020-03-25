@@ -64,6 +64,11 @@
   letter-spacing: .2px;
 }
 
+.registration main .container .user-registration header.register p span {
+  color: red;
+  font-weight: 700;
+}
+
 .registration main .container .user-registration .field-group label {
   display: block;
   margin-bottom: 15px;

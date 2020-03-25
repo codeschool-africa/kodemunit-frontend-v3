@@ -282,5 +282,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, { register, setAlert })(Register);
-
-//to add data in array i will have to create  a variable using react hooks and set it as an array...

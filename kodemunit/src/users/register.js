@@ -133,7 +133,9 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               {normalInputs.map(access => {
                 return (
                   <div className='field-group content' key={access.key}>
-                    <label htmlFor={access.key}>{access.label}<span>(required*)</span></label>
+                    <label htmlFor={access.key}>
+                      {access.label}{" "}<span>(required*)</span>
+                    </label>
                     <div className='input'>
                       <input
                         id={access.key}
@@ -149,7 +151,8 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               })}
               <div className='field-group content'>
                 <label htmlFor='comp-access'>
-                  Do you own or have access to computer for coding?<span>(required*)</span>
+                  Do you own or have access to computer for coding?{" "}
+                  <span>(required*)</span>
                 </label>
                 <select
                   name='compAccess'
@@ -170,7 +173,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 <p>
                   Kindly indicate the time period (in your local time) during
                   which you will be actively participating in the program
-                  activities<span>(required*)</span>
+                  activities{" "}<span>(required*)</span>
                 </p>
                 {goodTimeCheckBoxes.map(access => {
                   return (
@@ -208,7 +211,10 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 })}
               </div>
               <div className='field-group content'>
-                <p>which learning ways/styles are good for you?<span>(required*)</span></p>
+                <p>
+                  which learning ways/styles are good for you?{" "}
+                  <span>(required*)</span>
+                </p>
                 {learningStylesCheckBoxes.map(access => {
                   return (
                     <label htmlFor={access.key} key={access.key}>

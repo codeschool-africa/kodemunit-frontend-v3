@@ -149,7 +149,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               })}
               <div className='field-group content'>
                 <label htmlFor='comp-access'>
-                  Do you own or have access to computer for coding?
+                  Do you own or have access to computer for coding?<span>(required*)</span>
                 </label>
                 <select
                   name='compAccess'
@@ -170,7 +170,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 <p>
                   Kindly indicate the time period (in your local time) during
                   which you will be actively participating in the program
-                  activities
+                  activities<span>(required*)</span>
                 </p>
                 {goodTimeCheckBoxes.map(access => {
                   return (
@@ -190,7 +190,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <div className='field-group content'>
                 <p>
                   How many hours can you dedicate to the program in a week?{" "}
-                  <span>(Choose one option)*</span>
+                  <span>(Choose one option, required)*</span>
                 </p>
                 {hoursWeekRadio.map(access => {
                   return (
@@ -208,7 +208,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 })}
               </div>
               <div className='field-group content'>
-                <p>which learning ways/styles are good for you?</p>
+                <p>which learning ways/styles are good for you?<span>(required*)</span></p>
                 {learningStylesCheckBoxes.map(access => {
                   return (
                     <label htmlFor={access.key} key={access.key}>

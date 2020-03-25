@@ -133,7 +133,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               {normalInputs.map(access => {
                 return (
                   <div className='field-group content' key={access.key}>
-                    <label htmlFor={access.key}>{access.label}</label>
+                    <label htmlFor={access.key}>{access.label}<span>(required*)</span></label>
                     <div className='input'>
                       <input
                         id={access.key}

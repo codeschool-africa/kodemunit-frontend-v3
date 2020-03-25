@@ -126,7 +126,8 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <h1>Register Now To Start your Journey with us</h1>
               <p>
                 Fill this form to help us implement the best way to guide you in
-                your software development carrier.
+                your software development carrier. <br/>
+                <span>* - Required</span>
               </p>
             </header>
             <form onSubmit={e => handleSubmit(e)} noValidate>
@@ -134,7 +135,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 return (
                   <div className='field-group content' key={access.key}>
                     <label htmlFor={access.key}>
-                      {access.label}{" "}<span>(required*)</span>
+                      {access.label}{" "}<span>*</span>
                     </label>
                     <div className='input'>
                       <input
@@ -152,7 +153,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <div className='field-group content'>
                 <label htmlFor='comp-access'>
                   Do you own or have access to computer for coding?{" "}
-                  <span>(required*)</span>
+                  <span>*</span>
                 </label>
                 <select
                   name='compAccess'
@@ -173,7 +174,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
                 <p>
                   Kindly indicate the time period (in your local time) during
                   which you will be actively participating in the program
-                  activities{" "}<span>(required*)</span>
+                  activities{" "}<span>*</span>
                 </p>
                 {goodTimeCheckBoxes.map(access => {
                   return (
@@ -193,7 +194,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <div className='field-group content'>
                 <p>
                   How many hours can you dedicate to the program in a week?{" "}
-                  <span>(Choose one option, required)*</span>
+                  <span>*</span>
                 </p>
                 {hoursWeekRadio.map(access => {
                   return (
@@ -213,7 +214,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               <div className='field-group content'>
                 <p>
                   which learning ways/styles are good for you?{" "}
-                  <span>(required*)</span>
+                  <span>*</span>
                 </p>
                 {learningStylesCheckBoxes.map(access => {
                   return (
@@ -239,7 +240,7 @@ const Register = ({ register, setAlert, auth: { loading } }) => {
               </div>
               <div className='field-group content'>
                 <label htmlFor='about'>
-                  tell us about yourself <span>(optional)*</span>
+                  tell us about yourself <span>(optional)</span>
                 </label>
                 <div className='input'>
                   <textarea
